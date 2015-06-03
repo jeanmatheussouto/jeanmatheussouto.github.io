@@ -1,23 +1,60 @@
----
-layout: default
----
+<!DOCTYPE HTML>
+<!--
+	Aerial by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Jean Matheus Souto</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="loading">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
 
-<div class="home">
+				<!-- Header -->
+					<header id="header">
+						<h1>Jean Matheus Souto</h1>
+						<p>Full Stack Engineer at <a href="http://resultadosdigitais.com.br" target="_blanck">Resultados Digitais</a> &nbsp;&bull;&nbsp; Coding...</p>
+						<nav>
+							<ul>
+								<li><a href="https://github.com/jeanmatheussouto" class="icon fa-github" target="_blanck"><span class="label">Dribbble</span></a></li>
+								<li><a href="https://br.linkedin.com/in/jeanmatheussouto" target="_blanck" class="icon fa-linkedin"><span class="label">Twitter</span></a></li>
+								<li><a href="https://twitter.com/jeanmsouto" target="_blanck" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://google.com/+JeanMatheusSouto" target="_blanck" class="icon fa-google-plus"><span class="label">Twitter</span></a></li>
+								<li><a href="mailto:jeanmatheussouto@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+							</ul>
+						</nav>
+					</header>
 
-  <h1 class="page-heading">Posts</h1>
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+					</footer>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+			</div>
+		</div>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script>
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+		  ga('create', 'UA-56571025-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+	</body>
+</html>
